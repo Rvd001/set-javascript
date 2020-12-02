@@ -18,8 +18,10 @@ function initializeViz() {
 
 
 function o() {
-  activeSheet.applyFilterAsync(filterName,filterValue,filterType);
+  workbook = workbook.activateSheetAsync("Bain with SSD")
+  workbook.getActiveSheet().applyFilterAsync(filterName,filterValue,filterType);
 } 
+
 
 
 function vizFilter(filterName,filterValue,filterType){
