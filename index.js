@@ -17,7 +17,7 @@ function initializeViz() {
 } 
 
 function f() {
-  activeSheet.applyFilterAsync(
+  viz.workbook.getActiveSheet().applyFilterAsync(
     "Category",
     "Furniture",
     tableau.FilterUpdateType.ADD);
