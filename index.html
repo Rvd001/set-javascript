@@ -1,4 +1,192 @@
+
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>superstore.com</title>
+    <link rel="stylesheet" type="text/css", href="code.css"/>
+    <script src="code.js"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.6.0.min.js"></script>
+    
+</head>
+
+<body onload="initViz();">
+    
+        <!-- <button type="button" id = "barChart" onclick="barChart();" value="Bar Chart">Bar Chart</button>
+        <button type="button" id = "bubbleChart" value="Bubble Chart" onclick="BubbleChart();">Bubble Chart</button>
+        <button type="button" id = "boxAndWhisker" onclick="boxAndWhisker();" value="Box and Whisker Plot">Box and Whisker Plot</button>
+        <br>
+        <br>
+        <p id="chartType"></p> -->
+
+
+
+
+
+
+        <div id="mainDiv">
+
+            <div class="divide" id="first-row">
+                <div id="left"></div>
+                <div id="right"></div>
+            </div>
+
+            <div class="divide">
+                <div id="bottom"></div>
+            </div>
+
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+
+        <!-- New Structure -->
+        <div id="whole">
+            <!-- Filter Header -->
+            <div class="sheet" id="filter-background">
+                <h3>Filters</h3>
+            </div>
+            <!-- div for filters -->
+            <div class="sheet" id="filters">
+
+                    <div class="fill" id="city">
+                        <h3>City</h3>
+                        <form>
+                                <input type="checkbox" class="city" id="cAll" name="All City" value="All" onclick="city()">
+                                <label for="cAll"> (All) </label><br>
+                                <input type="checkbox" class="city" id="cIbadan" name="Ibadan" value="Ibadan" onclick="city()">
+                                <label for="cIbadan"> Ibadan </label><br>
+                                <input type="checkbox" class="city" id="cOthers" name="Others" value="Others" onclick="city()">
+                                <label for="cOthers"> Others </label>
+                        </form>
+
+                    </div>
+
+                    <div class="fill" id="degree">
+                            <h3>Degree</h3>
+                    </div>
+                    
+                    <div class="fill" id="nysc">
+                            <h3>NYSC</h3>
+                            <form>
+                                    <input type="checkbox" id="nAll" name="All NYSC" value="All">
+                                    <label for="nAll"> (All) </label><br>
+                                    <input type="checkbox" id="nNo" name="No" value="No">
+                                    <label for="nNo"> No </label><br>
+                                    <input type="checkbox" id="nYes" name="Yes" value="Yes">
+                                    <label for="nYes"> Yes </label>
+                            </form>                           
+                    </div>
+
+                    <div class="fill" id="gender">
+                            <h3>Gender</h3>
+                    </div>
+
+                    <div class="fill" id="stem">
+                            <h3>STEM Aligned</h3>
+                    </div>
+
+                    <div class="fill" id="yoe">
+                            <h3>Years of Experience</h3>
+                    </div>
+
+                    <div class="fill" id="age">
+                            <!-- <h3>Age</h3> -->
+                            <h3>Region</h3>
+                            <form>
+                                <input type="checkbox" class="region" id="rAll" name="All City" value="All" onclick="region()">
+                                <label for="rAll"> (All) </label><br>
+                                <input type="checkbox" class="region" id="rCentral" name="Central" value="Central" onclick="region()">
+                                <label for="rCentral"> Central </label><br>
+                                <input type="checkbox" class="region" id="rEast" name="East" value="East" onclick="region()">
+                                <label for="rEast"> East </label><br>
+                                <input type="checkbox" class="region" id="rSouth" name="South" value="South" onclick="region()">
+                                <label for="rSouth"> South </label><br>
+                                <input type="checkbox" class="region" id="rWest" name="West" value="West" onclick="region()">
+                                <label for="rWest"> West </label>
+                        </form>
+
+                    </div>
+
+            </div>
+
+
+            <!-- Sheet Header -->
+            <div class="sheet" id="sheet-heading-background">
+                <h3>Applicant Data based on chosen filters</h3>
+            </div>
+
+            <!-- div for worksheet -->
+            <div class="sheet" id="worksheet"></div>
+
+
+        </div>
+
+
+
+
+
+        <br>
+        <br>
+        <!-- paragraph to know the chart being chosen -->
+
+
+        <!-- <div id="filterSelection" style="padding:20px;">
+            <button type="button" id = "West" onclick="westFilter();">West</button>
+            <button type="button" id = "East" onclick="eastFilter();">East</button>
+            <button type="button" id = "South" onclick="southFilter();">South</button>
+        </div>
+        <br>
+        <br>  -->
+
+        <!-- <div id="vizContainer"></div> -->
+
+        <!-- This houses the visualization -->
+
+
+        <!-- <div id="controls" style="padding:20px;"> -->
+
+
+            <!-- padding is space around an element -->
+<!-- 
+            <form id="resizeForm">
+                <input type="text" id="resizeWidth" placeholder="Width">
+                <input type="text" id="resizeHeight" placeholder="Height">
+                <button type="button" onClick="vizResize();">Resize</button>
+                <button type="button" onClick="originalSize();">Original Size</button>
+            </form> -->
+
+
+        <!-- </div> -->
+
+
+
+
+</body>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +206,7 @@
 
 
             <div class="fill" id="nysc">
-                    <h3>Filters</h3>
+                    <h3>Filters</h3> -->
                     <!-- <form>
                             <input type="checkbox" id="furniture" name="Furniture" value="Furniture" onclick="f()">
                             <label for="furniture"> Furniture </label><br>
@@ -33,7 +221,7 @@
                     </form>      -->
                     
 
-                    <p class= "runCode">
+                    <!-- <p class= "runCode">
                     <br>
                            
                             <button onclick="f()">New ture</button>
@@ -50,4 +238,4 @@
 
         
     </body>
-</html>
+</html> -->
