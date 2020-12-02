@@ -2,7 +2,8 @@
 function initializeViz() {
   var placeholderDiv = document.getElementById("vizContainer");
   // var url = "https://public.tableau.com/views/WorldIndicators/GDPpercapita";
-  var url = 'https://lumpy-decorous-ixia.glitch.me/'
+  var url = "https://public.tableau.com/views/testingdashboard_16069128488460/BainwithSSD"
+  // var url = 'https://lumpy-decorous-ixia.glitch.me/'
   var options = {
     width: placeholderDiv.offsetWidth,
     height: placeholderDiv.offsetHeight,
