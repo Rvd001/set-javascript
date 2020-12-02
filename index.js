@@ -17,6 +17,27 @@ function initializeViz() {
 } 
 
 
+function vizFilter(filterName,filterValue,filterType){
+  sheet=viz.getWorkbook().getActiveSheet();
+  if(sheet.getSheetType() === 'worksheet'){
+  sheet.applyFilterAsync(filterName,filterValue,filterType);
+  }
+  else{
+  worksheetArray = sheet.getWorksheets();
+  for(var i =0; i < worksheetArray.length; i++)
+  {
+  worksheetArray[i].applyFilterAsync(filterName,filterValue,filterType);
+  }
+  }
+  };
+
+
+
+
+
+
+
+
 function category(value) {
     activeSheet.applyFilterAsync(
       "Category",
