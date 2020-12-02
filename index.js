@@ -1,7 +1,8 @@
 
 function initializeViz() {
   var placeholderDiv = document.getElementById("tableauViz");
-  var url = "https://public.tableau.com/views/WorldIndicators/GDPpercapita";
+  // var url = "https://public.tableau.com/views/WorldIndicators/GDPpercapita";
+  var url = 'https://lumpy-decorous-ixia.glitch.me/'
   var options = {
     width: placeholderDiv.offsetWidth,
     height: placeholderDiv.offsetHeight,
