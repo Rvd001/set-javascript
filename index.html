@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>staging Project</title>
+    <link rel="stylesheet" type="text/css" href="staging.css">
+    <script type="text/javascript"
+	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js">
+    </script>
+    <script src="index.js"></script>
+
+
+</head>
+
+    <body onload="initializeViz();">
+        <div id="vizContainer" style="width:800px; height:700px;"></div>
+
+        <div class="fill" id="nysc">
+            <h3>Filters</h3>
+            <form>
+                    <input type="checkbox" id="furniture" name="Furniture" value="Furniture" onclick="category(Furniture)">
+                    <label for="furniture"> Furniture </label><br>
+
+                    <input type="checkbox" id="furniture" name="Furniture" value="Furniture" onclick="category(Furniture)">
+                    <label for="furniture"> Furniture </label><br>
+
+                    <input type="checkbox" id="furniture" name="Furniture" value="Furniture" onclick="category(Furniture)">
+                    <label for="furniture"> Furniture </label><br>
+
+
+
+                    <input type="checkbox" id="nNo" name="No" value="No">
+                    <label for="nNo"> No </label><br>
+                    <input type="checkbox" id="nYes" name="Yes" value="Yes">
+                    <label for="nYes"> Yes </label>
+            </form>     
+            
+            <form>
+                <input type="checkbox" class="region" id="rAll" name="All City" value="All" onclick="region()">
+                <label for="rAll"> (All) </label><br>
+                <input type="checkbox" class="region" id="rCentral" name="Central" value="Central" onclick="region()">
+                <label for="rCentral"> Central </label><br>
+                <input type="checkbox" class="region" id="rEast" name="East" value="East" onclick="region()">
+                <label for="rEast"> East </label><br>
+                <input type="checkbox" class="region" id="rSouth" name="South" value="South" onclick="region()">
+                <label for="rSouth"> South </label><br>
+                <input type="checkbox" class="region" id="rWest" name="West" value="West" onclick="region()">
+                <label for="rWest"> West </label>
+        </form>
+
+
+
+
+    </div>
+    </body>
+</html>
