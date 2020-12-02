@@ -24,6 +24,28 @@ function category(value) {
       tableau.FilterUpdateType.ADD);
   }  
 
+  function f() {
+    activeSheet.applyFilterAsync(
+      "Category",
+      "Furniture",
+      tableau.FilterUpdateType.ADD);
+  } 
+
+  function t() {
+    activeSheet.applyFilterAsync(
+      "Category",
+      "Technology",
+      tableau.FilterUpdateType.ADD);
+  } 
+
+
+  function o() {
+    activeSheet.applyFilterAsync(
+      "Category",
+      "Office Supplies",
+      tableau.FilterUpdateType.ADD);
+  } 
+
 
 
   function addValuesToFilter() {
