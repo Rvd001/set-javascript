@@ -15,44 +15,31 @@
 </head>
 
     <body onload="initializeViz();">
+
+
+            <div class="fill" id="nysc">
+                    <h3>Filters</h3>
+                    <form>
+                            <input type="checkbox" id="furniture" name="Furniture" value="Furniture" onclick="category(Furniture)">
+                            <label for="furniture"> Furniture </label><br>
+        
+                            <input type="checkbox" id="furniture" name="Office Supplies" value="Office Supplies" onclick="category(Office Supplies)">
+                            <label for="furniture"> Office Supplies </label><br>
+        
+                            <input type="checkbox" id="furniture" name="Technology" value="Technology" onclick="category(Technology)">
+                            <label for="furniture"> Technology </label><br>
+        
+    
+                    </form>     
+                    
+
+        
+        
+        
+        
+            </div>
         <div id="vizContainer" style="width:800px; height:700px;"></div>
 
-        <div class="fill" id="nysc">
-            <h3>Filters</h3>
-            <form>
-                    <input type="checkbox" id="furniture" name="Furniture" value="Furniture" onclick="category(Furniture)">
-                    <label for="furniture"> Furniture </label><br>
-
-                    <input type="checkbox" id="furniture" name="Furniture" value="Furniture" onclick="category(Furniture)">
-                    <label for="furniture"> Furniture </label><br>
-
-                    <input type="checkbox" id="furniture" name="Furniture" value="Furniture" onclick="category(Furniture)">
-                    <label for="furniture"> Furniture </label><br>
-
-
-
-                    <input type="checkbox" id="nNo" name="No" value="No">
-                    <label for="nNo"> No </label><br>
-                    <input type="checkbox" id="nYes" name="Yes" value="Yes">
-                    <label for="nYes"> Yes </label>
-            </form>     
-            
-            <form>
-                <input type="checkbox" class="region" id="rAll" name="All City" value="All" onclick="region()">
-                <label for="rAll"> (All) </label><br>
-                <input type="checkbox" class="region" id="rCentral" name="Central" value="Central" onclick="region()">
-                <label for="rCentral"> Central </label><br>
-                <input type="checkbox" class="region" id="rEast" name="East" value="East" onclick="region()">
-                <label for="rEast"> East </label><br>
-                <input type="checkbox" class="region" id="rSouth" name="South" value="South" onclick="region()">
-                <label for="rSouth"> South </label><br>
-                <input type="checkbox" class="region" id="rWest" name="West" value="West" onclick="region()">
-                <label for="rWest"> West </label>
-        </form>
-
-
-
-
-    </div>
+        
     </body>
 </html>
