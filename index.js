@@ -17,6 +17,11 @@ function initializeViz() {
 } 
 
 
+function o() {
+  activeSheet.applyFilterAsync(filterName,filterValue,filterType);
+} 
+
+
 function vizFilter(filterName,filterValue,filterType){
   sheet=viz.getWorkbook().getActiveSheet();
   if(sheet.getSheetType() === 'worksheet'){
