@@ -6,8 +6,8 @@ function initializeViz() {
   var options = {
     width: placeholderDiv.offsetWidth,
     height: placeholderDiv.offsetHeight,
-    hideTabs: true,
-    hideToolbar: true,
+    hideTabs: false,
+    hideToolbar: false,
     onFirstInteractive: function () {
       workbook = viz.getWorkbook();
       activeSheet = workbook.getActiveSheet();
@@ -35,12 +35,6 @@ function vizFilter(filterName,filterValue,filterType){
   }
   }
   };
-
-
-
-
-
-
 
 
 function category(value) {
